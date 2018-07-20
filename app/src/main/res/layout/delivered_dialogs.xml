@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:text="Order Id  #7DFRE84"/>
+
+    <EditText
+        android:id="@+id/signature"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:layout_below="@+id/order_id"
+        android:background="@drawable/ic_rounded_edittext"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Signature of customer"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_for_signature"
+        android:layout_width="wrap_content"
+        android:text="No customer Signature"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/signature"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/checkbox_for_signature"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_rounded_edittext"
+        android:hint="Remarks "/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/remark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/update_button"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_selected"
+                android:textColor="@android:color/white"
+                android:text="Update"
+                />
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_grey"
+                android:textColor="@android:color/black"
+                android:text="cancel"
+                android:layout_marginLeft="20dp"
+                /></LinearLayout>
+    </RelativeLayout>

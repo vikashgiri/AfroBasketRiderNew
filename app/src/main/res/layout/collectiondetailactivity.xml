@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:id="@+id/txt_name"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:background="@color/heading_grey"
+        android:text="Order Detail"/>
+
+        <RelativeLayout
+
+
+            android:layout_below="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Order Id: #45AFDGT"
+                    android:layout_marginTop="10dp"
+android:id="@+id/order_id"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/merchent_details"
+                    android:layout_width="wrap_content"
+                    android:text="Merchant Name\n sector 75 Noida India"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:text="01_nov_2017,20:12:2015"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="22/05/2017"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+
+                    android:id="@+id/delivery_time"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Cash"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/payable"
+                    android:layout_marginRight="20dp"
+
+                    android:id="@+id/payment_mode"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+            <TextView
+                android:id="@+id/shipping_details"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="Aman kumar\n sector 75 Noida India"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Vgiri@gmail.com"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mail"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0887744556"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:id="@+id/phone_number" android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                android:layout_below="@+id/shipping_details"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:text="500 GHC"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/payable"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/card_view1"
+            android:layout_above="@+id/rel_bottoms"
+            android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_grey"
+                android:weightSum="2"
+                android:id="@+id/rel_bottoms"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/order_deliverd"
+                    android:layout_width="match_parent"
+                    android:text="Out For Delivery"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+               <!-- <Button
+                    android:id="@+id/order_cancel"
+
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_width="wrap_content"
+                    android:text="UAssigned"
+                    android:background="@color/bg_grey"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+                    android:layout_height="match_parent" />-->
+            </LinearLayout>
+  </RelativeLayout>
+
+    </RelativeLayout>
+    </layout>

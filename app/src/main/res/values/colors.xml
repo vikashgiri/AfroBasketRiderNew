@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#689f39</color>
+    <color name="colorPrimaryDark">#537e2c</color>
+    <color name="colorAccent">#537e2c</color>
+    <color name="light_grey">#a1a1a1 </color>
+    <color name="dark_grey">#282828</color>
+    <color name="bg_grey">#cdcdcd</color>
+    <color name="heading_grey">#ececec</color>
+    <color name="tab_text">#ffffff</color>
+
+
+
+
+</resources>

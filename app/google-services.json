@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "377471130691",
+    "firebase_url": "https://afrobasketsrider.firebaseio.com",
+    "project_id": "afrobasketsrider",
+    "storage_bucket": "afrobasketsrider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377471130691:android:81df997b36bef1ce",
+        "android_client_info": {
+          "package_name": "com.afrobasketsRider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377471130691-d8n9kc0fr8d0pf0o4dlaej95aks5kkcf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.afrobasketsRider",
+            "certificate_hash": "8fb18fa533df29ccdb4a045a5ba20a82a1126df7"
+          }
+        },
+        {
+          "client_id": "377471130691-s9jmctfd9cc8s4j9eknr4t6ausk01pj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv7g_3MHkvfVwK4x_juHESsaJ7lcTprI0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377471130691-s9jmctfd9cc8s4j9eknr4t6ausk01pj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

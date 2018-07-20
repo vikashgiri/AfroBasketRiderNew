@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_logo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:hint="UserName"
+        android:padding="10dp"
+        android:background="@drawable/ic_rounded_edittext"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_rounded_edittext"/>
+       <CheckBox
+           android:id="@+id/checkBox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:layout_margin="10dp"
+           android:text="Remember Me" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_selected"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:text="Login"/></LinearLayout>
+    </layout>
